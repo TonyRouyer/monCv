@@ -1,0 +1,144 @@
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Baloo Chettan 2', cursive !important;
+    background: linear-gradient(#207620 20%, #333333);
+
+}
+main {
+    background: linear-gradient(#207620, #333333);
+}
+/* Nav */
+nav {
+    letter-spacing: 2px;
+}
+#navbarmenu {
+    border-bottom: 1px solid #fff;
+}
+.navbar-nav {
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.nav-item {
+    margin: 0 20px;
+}
+.nav-link {
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+}
+.nav-link:hover {
+    text-decoration: none;
+    color: #207620;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+} 
+.burgericon {
+    width: 40px;
+}
+/*AboutMe */
+#aboutMe {
+    padding-top: 100px;
+
+}
+.heading {
+    text-align: center;
+}
+.heading h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 15px;
+    text-align: center;
+}
+.heading h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.ddlButton {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: bold;
+    border: 2px solid #FFF;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+
+}
+.ddlButton:hover {
+    background-color: #FFF;
+    color: #207620;
+    text-decoration: none;
+}
+/* footer */
+footer {
+    padding: 0 !important;
+    background-color: #333333;
+}
+footer a {
+    margin-top: 15px;
+}
+footer p {
+    color: #FFF;
+    margin: 0 auto;
+    font-weight: bold;
+
+}
+.copyright {
+    color: #545454;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.upicon {
+    width: 50px;
+}
+.giticon {
+    width: 50px;
+
+}
+/*Skills*/
+#skills{
+    height: 1080px;
+}
+.skill-list {
+    margin-top: 70px;
+}
+.titre {
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+}
+.skill-row p {
+    color: #FFF;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.progress-bar {
+    font-size: 20px;
+}
+.bar-html {
+    background-color: #FFBD59 !important;
+}
+.bar-js {
+    background-color: #FFDE59 !important;
+}
+.bar-css {
+    background-color: #5271FF !important;
+}
+.bar-php {
+    background-color: #8C52FF !important;
+}
+
+
+
