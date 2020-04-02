@@ -46,9 +46,7 @@ nav {
     padding-top: 100px;
     height: 1080px;
 }
-#aboutMe img {
-    box-shadow: 0px 0px 80px -19px rgba(0,0,0,0.94);
-}
+
 .heading {
     text-align: center;
 }
@@ -168,7 +166,7 @@ footer p {
 }
 /*work */
 #work {
-    padding: 45px 0 80px 0;
+    padding-bottom: 80px;
 }
 .work-list  {
     margin-top: 70px;
@@ -328,3 +326,57 @@ margin-bottom: 0;
     color: #FFF;
     font-size: 20px;
  }
+/*Project*/
+#project{
+    padding-bottom: 80px;
+}
+.project-list {
+    margin-top: 70px;
+}
+.carousel {
+    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+}
+.carousel-caption a {
+    text-decoration: none;
+    color: #FFF;
+}
+.carousel-caption a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+/*contact*/
+#contact{
+    padding-bottom: 200px;
+}
+.contact-list {
+    margin-top: 70px;
+}
+form  {
+    background-color: #303E30;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+
+}
+form ol {
+    list-style: none;
+}
+form li {
+    margin: 10px 0;
+}
+label {
+    display: block;
+    width: 150px;
+    float: left;
+    margin-bottom: 0 !important;
+    color: #FFF;
+}
+.contact-aside {
+    color: #FFF;
+    margin-left: 20px;
+    margin-top: 80px;
+    font-size: 30px;
+}
