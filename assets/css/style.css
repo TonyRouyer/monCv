@@ -49,18 +49,9 @@ nav {
     background-color: #fff;
     border-radius: 5px 5px 0 0;
 } 
-.burgericon {
-    width: 40px;
-}
 /* footer */
 footer {
     background-color: #333333;
-}
-.upicon {
-    width: 50px;
-}
-.giticon {
-    width: 50px;
 }
 footer p {
     color: #FFF;
@@ -159,7 +150,6 @@ left: 50%;
 margin-left: -2.5px;
 }
 .arrow-icon {
-    width: 50px;
     position: relative;
     left: 50%;
     margin: -23.75px;
@@ -184,11 +174,9 @@ clear: both;
 }
     /*badge*/
 .work-icon {
-    width: 30px;
     margin-bottom: 5px;
 }
-.timeline li .timeline-badge
-{
+.timeline li .timeline-badge {
     width: 50px;
     line-height: 50px;
     text-align: center;
@@ -201,18 +189,15 @@ clear: both;
     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
 }
     /*Panel*/
-.timeline-panel-container
-{
+.timeline-panel-container {
     width: 50%;
     float: left;
 }
-.timeline-panel-container-inverted
-{
+.timeline-panel-container-inverted {
     width: 50%;
     float: right;
 }
-.timeline-panel
-{
+.timeline-panel {
     width: 90%;
     float: right;
     margin-right: 40px;
@@ -223,8 +208,7 @@ clear: both;
     background: #333333;
     color: #FFF ;
 }
-.timeline-panel-container-inverted .timeline-panel
-{
+.timeline-panel-container-inverted .timeline-panel {
     float: left;
     margin-left: 40px;
 }
@@ -270,31 +254,27 @@ clear: both;
 #degree {
     padding-bottom: 50px;
 }
-.degree-item
- {
+.degree-item{
      background-color: #303E30;
      margin: 30px auto;
      text-align: center;
      border-radius: 20px;
      box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
      color: #FFF;
- }
+}
 .degree-item img {
-    width: 70px;
     margin: 0 auto;
 }
- .degree-item h1
- {
+ .degree-item h1{
     font-weight: bold;
     font-size: 35px;
     padding-top: 5px;
- }
- .degree-item p
- {
+}
+ .degree-item p{
     font-size: 20px;
- }
+}
 /*Project*/
-#project{
+#project {
     padding-bottom: 50px;
 }
 .carousel {
