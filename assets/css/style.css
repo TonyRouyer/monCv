@@ -1,3 +1,4 @@
+/*General*/
 .container-fluid {
     padding: 0;
     margin: 0;
@@ -10,13 +11,15 @@ body {
 main {
     background: linear-gradient(#207620, #333333);
 }
+.section-title {
+    margin-top: 70px;
+}
 /* Nav */
 nav {
     letter-spacing: 2px;
     background-color: #333333;
     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
 }
-
 #navbarmenu {
     border-bottom: 1px solid #fff;
 }
@@ -41,12 +44,41 @@ nav {
 .burgericon {
     width: 40px;
 }
+/* footer */
+footer {
+    padding: 0 !important;
+    background-color: #333333;
+}
+footer a {
+    margin-top: 15px;
+}
+footer p {
+    color: #FFF;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.copyright {
+    color: #545454;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.upicon {
+    width: 50px;
+}
+.giticon {
+    width: 50px;
+
+}
 /*AboutMe */
 #aboutMe {
     padding-top: 100px;
     height: 1080px;
 }
-
+.profil-picture {
+    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+    padding: 0 !important;
+}
 .heading {
     text-align: center;
 }
@@ -63,7 +95,6 @@ nav {
     margin-top: 20px;
     text-align: center;
     font-weight: bold;
-
 }
 .ddlButton {
     font-weight: bold;
@@ -76,46 +107,15 @@ nav {
     margin-top: 30px;
     border-radius: 3px;
     margin-bottom: 50px;
-
 }
 .ddlButton:hover {
     background-color: #FFF;
     color: #207620;
     text-decoration: none;
 }
-/* footer */
-footer {
-    padding: 0 !important;
-    background-color: #333333;
-}
-footer a {
-    margin-top: 15px;
-}
-footer p {
-    color: #FFF;
-    margin: 0 auto;
-    font-weight: bold;
-
-}
-.copyright {
-    color: #545454;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-}
-.upicon {
-    width: 50px;
-}
-.giticon {
-    width: 50px;
-
-}
 /*Skills*/
 #skills{
     height: 1023px;
-}
-.skill-list {
-    margin-top: 70px;
 }
 .titre {
     text-align: center;
@@ -167,9 +167,6 @@ footer p {
 /*work */
 #work {
     padding-bottom: 80px;
-}
-.work-list  {
-    margin-top: 70px;
 }
     /*central line*/
 .timeline:before {
@@ -280,7 +277,6 @@ clear: both;
     background-color: #333333;
     border-radius: 20px 20px 0 0;
     margin-bottom: 0;
-
 }
 .timeline-body p {
     color: #FFF;
@@ -298,9 +294,6 @@ margin-bottom: 0;
 /*Degree*/
 #degree {
     padding-bottom: 50px;
-}
-.degree-list  {
-    margin-top: 70px;
 }
 .school-icon {
     width: 70px;
@@ -330,9 +323,6 @@ margin-bottom: 0;
 #project{
     padding-bottom: 80px;
 }
-.project-list {
-    margin-top: 70px;
-}
 .carousel {
     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
 }
@@ -345,21 +335,16 @@ margin-bottom: 0;
     color: black;
     font-weight: bold;
 }
-
 /*contact*/
 #contact{
     padding-bottom: 200px;
 }
-.contact-list {
-    margin-top: 70px;
-}
 form  {
     background-color: #303E30;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 40px;
     border-radius: 20px;
     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
-
 }
 form ol {
     list-style: none;
@@ -377,6 +362,20 @@ label {
 .contact-aside {
     color: #FFF;
     margin-left: 20px;
-    margin-top: 80px;
+    margin-top: 100px;
     font-size: 30px;
+    text-align: center;
+}
+.button1 {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+small {
+    color: #FFF;
+}
+.img-contact {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
 }
