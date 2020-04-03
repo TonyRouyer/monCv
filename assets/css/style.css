@@ -1,18 +1,26 @@
 /*General*/
-.container-fluid {
-    padding: 0;
-    margin: 0;
-}
 body {
     font-family: 'Baloo Chettan 2', cursive !important;
-    background: linear-gradient(#207620 20%, #333333);
-
 }
 main {
     background: linear-gradient(#207620, #333333);
 }
 .section-title {
-    margin-top: 70px;
+    padding-top: 70px;
+}
+.titre {
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.sub-title {
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 30px;
 }
 /* Nav */
 nav {
@@ -46,11 +54,13 @@ nav {
 }
 /* footer */
 footer {
-    padding: 0 !important;
     background-color: #333333;
 }
-footer a {
-    margin-top: 15px;
+.upicon {
+    width: 50px;
+}
+.giticon {
+    width: 50px;
 }
 footer p {
     color: #FFF;
@@ -59,41 +69,27 @@ footer p {
 }
 .copyright {
     color: #545454;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-}
-.upicon {
-    width: 50px;
-}
-.giticon {
-    width: 50px;
-
+    padding: 20px 10px 20px 0;
 }
 /*AboutMe */
 #aboutMe {
     padding-top: 100px;
-    height: 1080px;
 }
-.profil-picture {
+#aboutMe img {
     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
-    padding: 0 !important;
+    padding: 0 ;
 }
 .heading {
     text-align: center;
+    color: #FFF;
 }
 .heading h1 {
-    color: #FFF;
-    text-transform: uppercase;
     font-size: 40px;
     margin-top: 15px;
-    text-align: center;
 }
 .heading h2 {
-    color: #fff;
     font-size: 30px;
     margin-top: 20px;
-    text-align: center;
     font-weight: bold;
 }
 .ddlButton {
@@ -104,9 +100,8 @@ footer p {
     border: 2px solid #FFF;
     display: inline-block;
     padding: 15px 30px;
-    margin-top: 30px;
+    margin: 30px 0 50px 0;
     border-radius: 3px;
-    margin-bottom: 50px;
 }
 .ddlButton:hover {
     background-color: #FFF;
@@ -116,20 +111,6 @@ footer p {
 /*Skills*/
 #skills{
     height: 1023px;
-}
-.titre {
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 40px;
-}
-.sub-title {
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    margin: 20px 0;
-    font-size: 30px;
 }
 .skill-row {
     background-color: #303E30;
@@ -145,24 +126,22 @@ footer p {
 }
 .progress, .progress-bar {
     border-radius: 15px !important;
-}
-.progress-bar {
     font-size: 20px;
 }
-.bar-html {
-    background-color: #FFBD59 !important;
+.progress .bar-html {
+    background-color: #FFBD59 ;
 }
-.bar-js {
-    background-color: #FFDE59 !important;
+.progress .bar-js {
+    background-color: #FFDE59;
 }
-.bar-css {
-    background-color: #5271FF !important;
+.progress .bar-css {
+    background-color: #5271FF;
 }
-.bar-php {
-    background-color: #8C52FF !important;
+.progress .bar-php {
+    background-color: #8C52FF;
 }
-.bar-langue {
-    background-color: #4E63DD !important;
+.progress .bar-langue {
+    background-color: rgb(30, 94, 4);
 }
 /*work */
 #work {
@@ -188,11 +167,11 @@ margin-left: -2.5px;
 }
 .timeline {
     list-style: none;
-    padding: 20px 0 20px;
+    padding: 20px 0 20px 0;
     position: relative;
   }
 .timeline > li {
-margin-bottom: 20px;
+margin-top: 20px;
 position: relative;
 }
 .timeline > li:before,
@@ -242,6 +221,7 @@ clear: both;
     position: relative;
     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
     background: #333333;
+    color: #FFF ;
 }
 .timeline-panel-container-inverted .timeline-panel
 {
@@ -270,7 +250,6 @@ clear: both;
 }
     /*text panel*/
 .timeline-heading h3 {
-    color: #FFF ;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
@@ -279,25 +258,17 @@ clear: both;
     margin-bottom: 0;
 }
 .timeline-body p {
-    color: #FFF;
     text-align: center;
     font-size: 25px;
 }
-.timeline-body p:last-child {
-margin-bottom: 0;
-}
-
 .timeline-body {
     background-color: #303E30;
-    border-radius: 0 0 20px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
 }
 /*Degree*/
 #degree {
     padding-bottom: 50px;
-}
-.school-icon {
-    width: 70px;
-    margin: 0 auto;
 }
 .degree-item
  {
@@ -306,22 +277,25 @@ margin-bottom: 0;
      text-align: center;
      border-radius: 20px;
      box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+     color: #FFF;
  }
+.degree-item img {
+    width: 70px;
+    margin: 0 auto;
+}
  .degree-item h1
  {
-    color: #FFF;
     font-weight: bold;
     font-size: 35px;
     padding-top: 5px;
  }
  .degree-item p
  {
-    color: #FFF;
     font-size: 20px;
  }
 /*Project*/
 #project{
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 .carousel {
     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
@@ -337,7 +311,7 @@ margin-bottom: 0;
 }
 /*contact*/
 #contact{
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 form  {
     background-color: #303E30;
@@ -353,16 +327,13 @@ form li {
     margin: 10px 0;
 }
 label {
-    display: block;
-    width: 150px;
+    width: 200px;
     float: left;
-    margin-bottom: 0 !important;
     color: #FFF;
 }
 .contact-aside {
     color: #FFF;
-    margin-left: 20px;
-    margin-top: 100px;
+    margin-top: 40px;
     font-size: 30px;
     text-align: center;
 }
