@@ -80,6 +80,9 @@ footer p {
     color: #545454;
     padding: 20px 10px 20px 0;
 }
+footer .socialLink p:first-child {
+    margin-right: 0;
+}
 /*AboutMe */
 #aboutMe {
     padding: 60px 0;
