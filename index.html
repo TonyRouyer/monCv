@@ -1,60 +1,237 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cv TonyR</title>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Rouyer CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d55c1558f7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo" class="brand-logo">Home</a>
-            <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarmenu">
-                <span><img src="assets/img/iconfinder_Burger_Menu_4781852.png" alt="burger icon" class="burgericon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarmenu">
-                <ul class="navbar-nav ">
-                    <li class="nav-item"><a href="skills.html" class="nav-link">Compétences</a></li>
-                    <li class="nav-item"><a href="work.html" class="nav-link">Expériences</a></li>
-                    <li class="nav-item"><a href="degree.html" class="nav-link">Diplômes</a></li>
-                    <li class="nav-item"><a href="project.html" class="nav-link">Projet</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div id="top"></div>
-        <div id="aboutMe">
-            <div class="container-fluids" id="aboutMe">
-                <img src="assets/img/profil-picture.jpg" alt="profil picture" title="profil picture" class="rounded col-lg-2 col-4 mx-auto d-block" />
-                <div class="heading">
-                    <h1>TONY ROUYER</h1>
-                    <h2>Développeur web - web mobile</h2>
-                    <a href="assets/pdf/cvTony.pdf" title="download Cv" class="ddlButton">Télécharger mon CV</a>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg col-12 navbarBox">
+                <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarmenu">
+                    <span><img src="assets/img/iconfinder_Burger_Menu_4781852.png" alt="burger icon" class="burgericon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarmenu">
+                    <ul class="navbar-nav text-center">
+                        <a class="nav-item nav-link" href="#competence">Diplomes & Experience</a>
+                        <a class="nav-item nav-link" href="#diplome">Competences & Langue</a>
+                        <a class="nav-item nav-link" href="#projet">Projets</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-lg-7 col-md-7 col-sm-12 sideBox side-img"> </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 presentationBox">
+                <p class="text-center"><img src="assets/img/profil-picture.jpg" alt="profil picture" class="rounded-circle profil-picture"></p>
+                <div class="text-center text-white">
+                    <div class="textPresentation">
+                        <p>Tony Rouyer</p>
+                        <p>Developpeur web - Web mobile</p>
+                    </div>
+                    <div class="textLink">
+                        <p> 
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/tony-rouyer-a00677185/?originalSubdomain=fr">Linkedin</a>
+                        </p>
+                        <p> 
+                            <i class="fab fa-github-square"></i>
+                            <a href="https://github.com/TonyRouyer">Github</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <a href="#top" class="mx-auto d-block"><img src="assets/img/uparrow.png" alt="up" class="upicon /" /></a>
+    </div>
+    <div class="container-fluid competence-langues" id="competence">
+        <div class="row">
+            <div class="col-12 listSkill">
+                <h1>Competence & Langues</h1>
+                <h2>Front-end</h2>
             </div>
-            <div class="row">
-                <div class="d-flex flex-column mx-auto socialLink">
-                    <p>Github :<a href="https://github.com/TonyRouyer" class="linkfooter"><img src="assets/img/github.png" alt="github" title="github" class="giticon" /></a></p>
-                    <p>Linkedin :<a href="https://www.linkedin.com/in/tony-rouyer-a00677185/" class="linkfooter"><img src="assets/img/linkedin.png" alt="linkedin" title="linkedin" class="giticon" /></a></p>
+            <!--item1-->
+            <div class="col-md-12 col-lg-2 col-xl-2 my-2">
+                <p>HTML / CSS</p>
+            </div>
+            <div class="col-md-12 col-lg-10 col-xl-10 my-2">
+                <div class="progressBar">
+                    <div class="fondprogress1"></div>
+                    <div class="frontprogress1"></div>
+                    <div class="pourcentage">
+                        <p>80%</p>
+                    </div>
                 </div>
             </div>
-            <p class="copyright text-right">Tony Rouyer - 2020</p>
+            <!--fin item1-->
+            <div class="col-md-12 col-lg-2 col-xl-2 my-2">
+                <p>BOOSTRAP</p>
+            </div>
+            <div class="col-md-12 col-lg-10 col-xl-10 my-2">
+                <div class="progressBar">
+                    <div class="fondprogress2"></div>
+                    <div class="frontprogress2"></div>
+                    <div class="pourcentage">
+                        <p>60%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 listSkill">
+                <h2>Back-end</h2>
+            </div>
+            <div class="col-md-12 col-lg-2 col-xl-2 my-2">
+                <p>...</p>
+            </div>
+            <div class="col-md-12 col-lg-10 col-xl-10 my-2">
+                <div class="progressBar">
+                    <div class="fondprogress3"></div>
+                    <div class="frontprogress3"></div>
+                    <div class="pourcentage">
+                        <p>50%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 listSkill">
+                <h2>Langue</h2>
+            </div>
+            <div class="col-md-12 col-lg-2 col-xl-2 my-2">
+                <p>Français</p>
+            </div>
+            <div class="col-md-12 col-lg-10 col-xl-10 my-2">
+                <div class="progressBar">
+                    <div class="fondprogress4"></div>
+                    <div class="frontprogress4"></div>
+                    <div class="pourcentage">
+                        <p>100%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-2 col-xl-2 my-2">
+                <p>Anglais</p>
+            </div>
+            <div class="col-md-12 col-lg-10 col-xl-10 my-2">
+                <div class="progressBar">
+                    <div class="fondprogress5"></div>
+                    <div class="frontprogress5"></div>
+                    <div class="pourcentage">
+                        <p>70%</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <div class="container-fluid diplome-experience text-center paralax" id="diplome">
+        <div class="row">
+            <div class="col-md-12 col-lg-6 diplomeList">
+                <h1>Diplome</h1>
+                <div class="diplome-experience-Item">
+                    <h2>2020</h2>
+                    <p>Formation designer web / web mobile</p>
+                    <p>La Manu, Noyon</p>
+                </div>
+                <div class="diplome-experience-Item">
+                    <h2>2015</h2>
+                    <p>BTS travaux publics</p>
+                    <p>Lycée les pannevelles, Provins</p>
+                </div>
+                <div class="diplome-experience-Item">
+                    <h2>2013</h2>
+                    <p>Bac pro travaux publics</p>
+                    <p>Lycée Amyot d'inville, Senlis</p>
+                </div>
+                <div class="diplome-experience-Item">
+                    <h2>2010</h2>
+                    <p>Diplome national du brevet</p>
+                    <p>Collège Anne de montemorency, Fère-en-tardenois</p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 experienceList">
+                <h1>Experiences</h1>
+                <div class="diplome-experience-Item">
+                    <h2>2017 a 2020</h2>
+                    <p>Amée de terre, 13e RG</p>
+                    <p>Mission sentinelle, Opex</p>
+                </div>
+                <div class="diplome-experience-Item">
+                    <h2>2016 & 2015</h2>
+                    <p>Mission interim dans le BTP</p>
+                    <p>Voirie, assainissement</p>
+                </div>
+                <div class="diplome-experience-Item">
+                    <h2>2014</h2>
+                    <p>Stage Vallet Saunal</p>
+                    <p>Bureau d'étude, chantier</p>
+                    <p>(8 semaines)</p>
+                </div>
+                <div class="diplome-experience-Item">
+                    <h2>2013 et 2012</h2>
+                    <p>Stage Vallet Saunal</p>
+                    <p>Maneuvre BTP</p>
+                    <p>(19 semaines)</p>
+                </div>
+                <div class="diplome-experience-Item">
+                    <h2>2011</h2>
+                    <p>RVM</p>
+                    <p>Maneuvre BTP</p>
+                    <p>(6 semaines)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid project" id="projet">
+        <div class="row">
+            <div class="col-12">
+                <h1>Projet </h1>
+                <p class="text-center"><a href="project.html" class="text-white">En voir +</a></p>
+            </div>
+            <div class="col-12 text-center p-0 projectBlock">
+                <img src="https://via.placeholder.com/300" alt="placeholder" class="my-2 mx-2">
+                <img src="https://via.placeholder.com/300" alt="placeholder" class="my-2 mx-2">
+                <img src="https://via.placeholder.com/300" alt="placeholder" class="my-2 mx-2">
+                <img src="https://via.placeholder.com/300" alt="placeholder" class="my-2 mx-2">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid paralax2">
+        <div class="row">
+            <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 coordonate mx-auto">
+                <p><i class="fas fa-mobile-alt"></i>06.46.25.65.14</p>
+                <p><a class="text-white" href="mailto:tony.rouyer@hotmail.fr"><i class="fas fa-envelope"></i></a>tony.rouyer@hotmail.fr</p>
+                <p><button type="button" class="btn text-white" data-toggle="modal" data-target="#modalMap"><i class="fas fa-map-pin"></i></button>Rocourt-saint-martin, 02210</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12 contactForm mx-auto">
+                <form action="">
+                    <ul>
+                        <li>Vous pouvez aussi me contacter ici :</li>
+                        <li><input type="text" placeholder="Name / entreprise"></li>
+                        <li><input type="tel" placeholder="Telephone"></li>
+                        <li><input type="mail" placeholder="Mail"></li>
+                        <li><textarea name="message" id="message" cols="20" rows="8" placeholder="Message"></textarea>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+                        <div class="modal fade" id="modalMap" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe class="d-block mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.63430740919!2d3.3842663158612076!3d49.1505672880432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8efe3b6517ae7%3A0x3d96b394ac867e83!2s22%20Rue%20de%20l&#39;Europe%2C%2002210%20Rocourt-Saint-Martin!5e0!3m2!1sen!2sfr!4v1588175247412!5m2!1sen!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

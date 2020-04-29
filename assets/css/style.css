@@ -1,292 +1,286 @@
-/*General*/
-body {
-    font-family: 'Baloo Chettan 2', cursive !important;
+* {
+    font-family: 'Montserrat', sans-serif;
 }
-main {
-    background: linear-gradient(#207620, #333333);
-}
-.section-title {
-    padding-top: 70px;
-}
-.titre {
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    margin-top: 30px;
-    font-size: 40px;
-}
-.sub-title {
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    margin: 20px 0;
-    font-size: 30px;
-}
-/* Nav */
+/*nav*/
 nav {
-    letter-spacing: 2px;
-    background-color: #333333;
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
-    padding-bottom: 0 !important;
-    border-bottom: 1px solid #fff;
-    padding: 0 !important;
+    background-color: #253C59;
+    height: fit-content;
+}
+.navbarBox {
+    padding: 0;
 }
 nav a {
     color: #FFF;
 }
-nav a:hover {
-    color: #FFF;
+nav ul {
+    margin-left: 15%;
+    margin-top: 10px;
+    font-weight: bold;
 }
-.navbar-nav {
-    text-transform: uppercase;
-    margin: 0 auto;
-}
-.nav-item {
-    margin: 0 10px;
+@media screen and (max-width: 992px)
+{
+    nav ul {
+        margin-left: 0;
+    }
 }
 .nav-link {
     color: #FFF;
-    text-align: center;
-    font-weight: bold;
 }
-.nav-link:hover {
-    text-decoration: none;
-    color: #333333;
-    background-color: #fff;
-    border-radius: 10px;
-    border-bottom: 1px solid #fff;
-} 
-.nav-link:active {
-    text-decoration: none;
-    color: #333333;
-    background-color: #fff;
-    border-radius: 10px;
-    border-bottom: 1px solid #fff;
-} 
-.brand-logo {
-    height: 40px;
-    margin: 10px;
-}
-/* footer */
-footer {
-    background-color: #333333;
-}
-footer p {
-    color: #FFF;
-    margin: 0 auto;
-    font-weight: bold;
-}
-.copyright {
-    color: #545454;
-    padding: 20px 10px 20px 0;
-}
-footer .socialLink p:first-child {
-    margin-right: 0;
-}
-/*AboutMe */
-#aboutMe {
-    padding: 60px 0;
-}
-#aboutMe img {
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
-    padding: 0 ;
-}
-.heading {
-    text-align: center;
-    color: #FFF;
-}
-.heading h1 {
-    font-size: 40px;
-    margin-top: 15px;
-}
-.heading h2 {
-    font-size: 30px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.ddlButton {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #FFF;
-    font-weight: bold;
-    border: 2px solid #FFF;
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 30px 0 50px 0;
-    border-radius: 3px;
-}
-.ddlButton:hover {
-    background-color: #FFF;
-    color: #207620;
-    text-decoration: none;
-}
-/*Skills*/
-#skills{
-    padding-bottom: 150px;
-}
-.skill-row {
-    background-color: #303E30;
-    padding: 0 20px 20px 20px ;
-    border-radius: 20px;
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
-    display: flex;
-    flex-wrap: wrap;
-}
-.skill-row p {
-    color: #FFF;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 5px;
-}
-.progress, .progress-bar {
-    border-radius: 15px !important;
-    font-size: 20px;
-}
-.progress .bar-html {
-    background-color: #FFBD59 ;
-}
-.progress .bar-js {
-    background-color: #FFDE59;
-}
-.progress .bar-css {
-    background-color: #5271FF;
-}
-.progress .bar-php {
-    background-color: #8C52FF;
-}
-.progress .bar-langue {
-    background-color: rgb(30, 94, 4);
-}
-.bar-boostrap{
-    background-color: blue;
-}
-/*work */
-#work {
-    padding-bottom: 80px;
-}
-.timeline-line {
-    position: absolute;
-    left: calc(50% - 1.5px);
-    height: 1500px;
-    border-right: 3px solid white;
-    background-color: #FFf;
-    z-index: 0;
-}
-.arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid #FFF;
-    margin: 0 auto;
-  }
-.pannel h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    background-color: #333333;
-    border-radius: 20px 20px 0 0;
-    margin-bottom: 0;
-}
-.pannel p {
-    text-align: center;
-    font-size: 25px;
-}
-.pannel {
-    background-color: #303E30;
-    border-radius: 20px;
+/*presentation*/
+.sideBox{
     padding: 0;
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+    overflow: hidden;
 }
-.work-icon {
-    position: relative;
-    background-color: #FFF;
-    border-radius: 50%;
-    padding: 5px;
-    z-index: 1;
-    margin: 20px;
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+.side-img {
+    background-image: url("../img/officePc.jpeg");
+    max-height: calc(100vh - 50px);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
-/*Degree*/
-#degree {
-    padding-bottom: 50px;
+.presentationBox {
+    background-color: #253C59;
+    padding: 0;
+    height: calc(100vh - 50px);
 }
-.degree-item{
-     background-color: #303E30;
-     margin: 30px auto;
-     text-align: center;
-     border-radius: 20px;
-     box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
-     color: #FFF;
-     padding: 0 !important;
+.profil-picture{
+    width: 250px;
+    margin: 25px;
 }
-.degree-item img {
-    margin: 0 auto;
-}
- .degree-item h1{
+.textPresentation {
     font-weight: bold;
-    font-size: 35px;
-    padding-top: 5px;
-    background-color: #333333;
-    border-radius: 20px 20px 0 0;
+    font-size: 1.7em;
 }
- .degree-item p{
-    font-size: 20px;
+.textLink {
+    margin-bottom: 20px;
 }
-/*Project*/
-#project {
-    padding-bottom: 50px;
+.textLink a {
+    color: #FFF;
+    font-size: 1.2em;
 }
-.carousel {
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+.textLink p {
+    color: black;
 }
-.carousel-caption a {
-    text-decoration: none;
+@media screen and (max-width: 850px) and (max-height: 800px)
+{
+    .profil-picture{
+    width: 30%;
+    }
+    .presentationBox {
+        height: auto;
+    }
+}
+/*competence-langues*/
+.competence-langues {
+    background-color: #466FA6;
+    padding: 0 15% 20px 15%;
+    
+}
+.competence-langues h1 {
+    color:  #FFF;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2em;
+}
+.competence-langues h2 {
+    color:  #FFF;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.competence-langues p {
     color: #FFF;
 }
-.carousel-caption a:hover {
-    text-decoration: underline;
-    color: black;
+
+.progressBar {
+    margin: 10px auto 40px auto;
+
+}
+.pourcentage {
+    margin-top: 10px;
+}
+/*html css*/
+.frontprogress1 {
+    height: 5px;
+    width: 80%;
+    background-color: #0CDBF2;
+    margin: -3.5px;
+    border-radius: 20px;
+}
+.fondprogress1 {
+    height: 2px;
+    width: 100%;
+    background-color: #283959;
+    border-radius: 20px;
+}
+/*boostrap*/
+.frontprogress2 {
+    height: 5px;
+    width: 60%;
+    background-color: #0CDBF2;
+    margin: -3.5px;
+    border-radius: 20px;
+}
+.fondprogress2 {
+    height: 2px;
+    width: 100%;
+    background-color: #283959;
+    border-radius: 20px;
+}
+/*...*/
+.frontprogress3 {
+    height: 5px;
+    width: 50%;
+    background-color: #0CDBF2;
+    margin: -3.5px;
+    border-radius: 20px;
+}
+.fondprogress3 {
+    height: 2px;
+    width: 100%;
+    background-color: #283959;
+    border-radius: 20px;
+}
+/*francais*/
+.frontprogress4 {
+    height: 5px;
+    width: 100%;
+    background-color: #0CDBF2;
+    margin: -3.5px;
+    border-radius: 20px;
+}
+.fondprogress4 {
+    height: 2px;
+    width: 100%;
+    background-color: #283959;
+    border-radius: 20px;
+}
+/*anglais*/
+.frontprogress5 {
+    height: 5px;
+    width: 70%;
+    background-color: #0CDBF2;
+    margin: -3.5px;
+    border-radius: 20px;
+}
+.fondprogress5 {
+    height: 2px;
+    width: 100%;
+    background-color: #283959;
+    border-radius: 20px;
+}
+/*diplome-experience*/
+.paralax {
+    background-image: url("../img/paralax1.png");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.diplome-experience h1{
+   margin-top: 25px;
+   font-size: 2.5em;
+   font-weight: bold;
+   color: #FFF;
+}
+.diplome-experience h2 {
+    font-size: 1.5em;
     font-weight: bold;
+}
+.diplome-experience-Item{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: fit-content;
+    border-radius: 25px;
+    padding: 8px 12px;
+    font-size: 1.2em;
+    margin: 10px auto;
+}
+/*project*/
+
+
+
+
+.project{
+    background-color: #466FA6;
+    padding-bottom: 300px;
+}
+.project h1 {
+    text-align: center;
+    margin: 15px 0;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.project p a:hover{
+    color:  #FFF;
+    font-weight: bold;
+
+    text-decoration: none;
+    border: 2px solid #FFF;
+    padding: 2px;
 }
 /*contact*/
-#contact{
-    padding-bottom: 50px;
+.coordonate {
+    padding: 25px;
+    background-color: #283959;
+    margin-top: -200px;
 }
-form  {
-    background-color: #303E30;
-    padding: 10px;
-    margin-top: 40px;
-    border-radius: 20px;
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+.coordonate i {
+margin: 0 10px;
 }
-form ol {
-    list-style: none;
-    padding: 0 10px;
-}
-form li {
-    margin: 10px 0;
-}
-label {
-    float: left;
+.coordonate p {
     color: #FFF;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 25px;
 }
-.contact-aside {
+.contactForm {
+    padding: 25px;
+    background-color: #283959;
     color: #FFF;
-    margin-top: 40px;
-    font-size: 30px;
+    margin-bottom: 50px;
+}
+form ul {
+    padding: 0;
+}
+form input {
+    width: 70%; 
     text-align: center;
 }
-.button1 {
-    display: block;
-    margin: 0 auto;
-    font-weight: bold;
+form textarea {
+    width: 70%; 
+    text-align: center;
 }
-small {
-    color: #FFF;
+form li {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
 }
-.img-contact {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: -2px 3px 21px 2px rgba(0,0,0,0.50);
+@media screen and (max-width: 605px)
+{
+    .coordonate {
+        width: 100%;
+    }
+    .contactForm {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    form input {
+        width: 90%; 
+    }
+    form textarea {
+        width: 90%; 
+    }
+}
+.paralax2 {
+    background-image: url("../img/paralax2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
