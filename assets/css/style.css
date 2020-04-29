@@ -10,6 +10,8 @@ nav {
     padding: 0;
 }
 nav a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
     color: #FFF;
 }
 nav ul {
@@ -33,7 +35,7 @@ nav ul {
 }
 .side-img {
     background-image: url("../img/officePc.jpeg");
-    max-height: calc(100vh - 50px);
+    max-height: calc(100vh - 54px);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -41,7 +43,7 @@ nav ul {
 .presentationBox {
     background-color: #253C59;
     padding: 0;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 54px);
 }
 .profil-picture{
     width: 250px;
@@ -77,6 +79,7 @@ nav ul {
     
 }
 .competence-langues h1 {
+    font-family: 'Lato', sans-serif;
     color:  #FFF;
     font-weight: bold;
     padding-top: 15px;
@@ -84,9 +87,10 @@ nav ul {
     font-size: 2em;
 }
 .competence-langues h2 {
+    font-family: 'Lato', sans-serif;
     color:  #FFF;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 .competence-langues p {
     color: #FFF;
@@ -116,12 +120,26 @@ nav ul {
 /*boostrap*/
 .frontprogress2 {
     height: 5px;
-    width: 60%;
+    width: 75%;
     background-color: #0CDBF2;
     margin: -3.5px;
     border-radius: 20px;
 }
 .fondprogress2 {
+    height: 2px;
+    width: 100%;
+    background-color: #283959;
+    border-radius: 20px;
+}
+/*javascript*/
+.frontprogress6 {
+    height: 5px;
+    width: 60%;
+    background-color: #0CDBF2;
+    margin: -3.5px;
+    border-radius: 20px;
+}
+.fondprogress6 {
     height: 2px;
     width: 100%;
     background-color: #283959;
@@ -178,8 +196,8 @@ nav ul {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .diplome-experience h1{
+    font-family: 'Lato', sans-serif;
    margin-top: 25px;
    font-size: 2.5em;
    font-weight: bold;
@@ -198,26 +216,21 @@ nav ul {
     margin: 10px auto;
 }
 /*project*/
-
-
-
-
 .project{
     background-color: #466FA6;
     padding-bottom: 300px;
 }
 .project h1 {
+    font-family: 'Lato', sans-serif;
     text-align: center;
     margin: 15px 0;
     color: #FFF;
     font-weight: bold;
     font-size: 2em;
 }
-
 .project p a:hover{
     color:  #FFF;
     font-weight: bold;
-
     text-decoration: none;
     border: 2px solid #FFF;
     padding: 2px;
