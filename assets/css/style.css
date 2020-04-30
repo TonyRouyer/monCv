@@ -1,13 +1,15 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
-/*nav*/
-nav {
-    background-color: #253C59;
-    height: fit-content;
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
+/*nav*/
 .navbarBox {
     padding: 0;
+    background-color: #283959;
 }
 nav a {
     font-family: 'Lato', sans-serif;
@@ -15,149 +17,126 @@ nav a {
     color: #FFF;
 }
 nav ul {
-    margin-left: 15%;
-    margin-top: 10px;
-    font-weight: bold;
-}
-@media screen and (max-width: 992px)
-{
-    nav ul {
-        margin-left: 0;
-    }
-}
-.nav-link {
-    color: #FFF;
+    margin-left: 5%;
 }
 /*presentation*/
-.sideBox{
-    padding: 0;
-    overflow: hidden;
-}
+    /*box image*/
 .side-img {
-    background-image: url("../img/officePc.jpeg");
-    max-height: calc(100vh - 54px);
+    background-image: url("../img/officePc.jpg");
+    max-height: calc(100vh - 44px);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
+.textPresentation  {
+    position: absolute;
+    bottom: calc(50% - 47px);
+    left: calc(50% - 190px);
+    color: #FFF;
+}
+.textPresentation h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.textPresentation h2 {
+    font-size: 1.5em;
+}
+    /*box info*/
 .presentationBox {
-    background-color: #253C59;
-    padding: 0;
-    height: calc(100vh - 54px);
+    background-color: #283959;
+    height: calc(100vh - 44px);
 }
 .profil-picture{
-    width: 250px;
     margin: 25px;
+    margin-top: 50px;
 }
-.textPresentation {
-    font-weight: bold;
-    font-size: 1.7em;
+@media screen and (max-width: 768px)
+{
+    .textPresentationBlanck{
+        text-align: center;
+        color: #FFF;
+    }
+    .textPresentationBlanck h1:after {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 20px;
+        content: "Tony Rouyer";
+    }
+    .textPresentationBlanck h2:after {
+        font-size: 20px;
+        content: "Developpeur web - Web mobile";
+    }
+    .textPresentation  {
+    display: none;
+    }
 }
 .textLink {
-    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.textLink li {
+    margin-bottom: 15px;
+    text-align: center;
 }
 .textLink a {
     color: #FFF;
-    font-size: 1.2em;
 }
-.textLink p {
+.textLink a:hover{
+    font-size: 1.5em;
     color: black;
+    text-decoration: none;
 }
-@media screen and (max-width: 850px) and (max-height: 800px)
+.textLink i {
+    margin-right: 8px;
+    font-size: 1.5em;
+}
+@media screen and (max-height: 560px)
 {
     .profil-picture{
-    width: 30%;
-    }
-    .presentationBox {
-        height: auto;
+    width: 150px;
+    margin: 0;
     }
 }
 /*competence-langues*/
 .competence-langues {
-    background-color: #466FA6;
+    background-color: #283959;
     padding: 0 15% 20px 15%;
-    
+    color: #FFF
 }
 .competence-langues h1 {
     font-family: 'Lato', sans-serif;
-    color:  #FFF;
-    font-weight: bold;
     padding-top: 15px;
     text-align: center;
-    font-size: 2em;
 }
 .competence-langues h2 {
     font-family: 'Lato', sans-serif;
-    color:  #FFF;
-    font-weight: bold;
-    font-size: 1.8em;
+    margin-bottom: 30px;
 }
-.competence-langues p {
+.competence-langues h2 i {
     color: #FFF;
 }
-
+.competence-langues h3 {
+    font-size: 1em;
+}
+.competence-langues p {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 15px;
+    width: 180px;
+    background-color: #3F6F8C;
+    display: inline-block;
+}
+.competence-langues i {
+    margin-right: 20px;
+    font-size: 1.5em;
+}
 .progressBar {
-    margin: 10px auto 40px auto;
-
+    margin: 10px auto 0 auto;
 }
 .pourcentage {
     margin-top: 10px;
-}
-/*html css*/
-.frontprogress1 {
-    height: 5px;
-    width: 80%;
-    background-color: #0CDBF2;
-    margin: -3.5px;
-    border-radius: 20px;
-}
-.fondprogress1 {
-    height: 2px;
-    width: 100%;
-    background-color: #283959;
-    border-radius: 20px;
-}
-/*boostrap*/
-.frontprogress2 {
-    height: 5px;
-    width: 75%;
-    background-color: #0CDBF2;
-    margin: -3.5px;
-    border-radius: 20px;
-}
-.fondprogress2 {
-    height: 2px;
-    width: 100%;
-    background-color: #283959;
-    border-radius: 20px;
-}
-/*javascript*/
-.frontprogress6 {
-    height: 5px;
-    width: 60%;
-    background-color: #0CDBF2;
-    margin: -3.5px;
-    border-radius: 20px;
-}
-.fondprogress6 {
-    height: 2px;
-    width: 100%;
-    background-color: #283959;
-    border-radius: 20px;
-}
-/*...*/
-.frontprogress3 {
-    height: 5px;
-    width: 50%;
-    background-color: #0CDBF2;
-    margin: -3.5px;
-    border-radius: 20px;
-}
-.fondprogress3 {
-    height: 2px;
-    width: 100%;
-    background-color: #283959;
-    border-radius: 20px;
 }
 /*francais*/
 .frontprogress4 {
@@ -170,7 +149,7 @@ nav ul {
 .fondprogress4 {
     height: 2px;
     width: 100%;
-    background-color: #283959;
+    background-color: #3F6F8C;
     border-radius: 20px;
 }
 /*anglais*/
@@ -184,116 +163,109 @@ nav ul {
 .fondprogress5 {
     height: 2px;
     width: 100%;
-    background-color: #283959;
+    background-color: #3F6F8C;
     border-radius: 20px;
 }
 /*diplome-experience*/
 .paralax {
-    background-image: url("../img/paralax1.png");
+    background-image: url("../img/paralax1.jpg");
     min-height: 1000px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.diplome-experience {
+    color: #FFF;
+}
+.diplome-experience-Item{
+    padding: 8px 12px;
+    margin: 0 0 20px 45px;
+}
 .diplome-experience h1{
     font-family: 'Lato', sans-serif;
-   margin-top: 25px;
-   font-size: 2.5em;
-   font-weight: bold;
-   color: #FFF;
+   margin: 25px 0 25px 30px;
 }
 .diplome-experience h2 {
     font-size: 1.5em;
     font-weight: bold;
 }
-.diplome-experience-Item{
-    background-color: rgba(255, 255, 255, 0.8);
-    width: fit-content;
-    border-radius: 25px;
-    padding: 8px 12px;
-    font-size: 1.2em;
-    margin: 10px auto;
+.diplome-experience-Item p{
+    margin-left: 10px;
 }
 /*project*/
 .project{
-    background-color: #466FA6;
-    padding-bottom: 300px;
+    background-color: #283959;
+    padding-bottom: 150px;
+    color: #FFF;
 }
 .project h1 {
     font-family: 'Lato', sans-serif;
     text-align: center;
     margin: 15px 0;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 2em;
+}
+.project p {
+    text-align: center;
 }
 .project p a:hover{
     color:  #FFF;
-    font-weight: bold;
     text-decoration: none;
     border: 2px solid #FFF;
-    padding: 2px;
+    padding: 5px;
+}
+.projectBlock {
+    text-align: center;
 }
 /*contact*/
+.paralax2 {
+    background-image: url("../img/paralax1.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .coordonate {
-    padding: 25px;
-    background-color: #283959;
-    margin-top: -200px;
+    background-color: #3F6F8C;
+    margin-top: -100px;
 }
 .coordonate i {
-margin: 0 10px;
+    margin: 0 10px;
 }
-.coordonate p {
+.coordonate ul {
+    margin-bottom: 25px;
+}
+.coordonate li {
     color: #FFF;
     text-align: center;
     font-size: 1.2em;
-    margin-top: 25px;
-}
-.contactForm {
-    padding: 25px;
-    background-color: #283959;
-    color: #FFF;
-    margin-bottom: 50px;
-}
-form ul {
-    padding: 0;
-}
-form input {
-    width: 70%; 
-    text-align: center;
-}
-form textarea {
-    width: 70%; 
-    text-align: center;
-}
-form li {
     list-style: none;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 1.2em;
+    margin-top: 25px;
 }
 @media screen and (max-width: 605px)
 {
     .coordonate {
         width: 100%;
     }
-    .contactForm {
-        width: 100%;
-        margin-bottom: 0;
-    }
-    form input {
-        width: 90%; 
-    }
-    form textarea {
-        width: 90%; 
+    .paralax2 {
+        min-height: 0 !important;
     }
 }
-.paralax2 {
-    background-image: url("../img/paralax2.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+footer {
+    background-color: #283959;
+    position: absolute;
+    bottom: 0;
+}
+footer p {
+    margin-top: 15px;
+    text-align: center;
+}
+footer a {
+    color: #FFF;
+    font-size: 2em;
+    margin: 0 10px;
+}
+/*modal*/
+.modal-content {
+    background-color: #466FA6;
 }
