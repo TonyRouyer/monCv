@@ -193,6 +193,12 @@ nav ul {
 .diplome-experience-Item p{
     margin-left: 10px;
 }
+.diplomeList {
+    padding-left: 250px;
+}
+.experienceList {
+    padding-left: 250px;
+}
 /*project*/
 .project{
     background-color: #283959;
@@ -264,6 +270,11 @@ footer a {
     color: #FFF;
     font-size: 2em;
     margin: 0 10px;
+}
+footer a:hover {
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 2px 5px;
 }
 /*modal*/
 .modal-content {
