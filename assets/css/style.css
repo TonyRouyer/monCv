@@ -177,27 +177,43 @@ nav ul {
 }
 .diplome-experience {
     color: #FFF;
+    padding-bottom: 75px;
 }
 .diplome-experience-Item{
-    padding: 8px 12px;
-    margin: 0 0 20px 45px;
+    margin-left: 25px;
 }
 .diplome-experience h1{
     font-family: 'Lato', sans-serif;
-   margin: 25px 0 25px 30px;
+    margin-top: 10px;
 }
 .diplome-experience h2 {
     font-size: 1.5em;
     font-weight: bold;
-}
-.diplome-experience-Item p{
-    margin-left: 10px;
+    margin-top: 20px;
 }
 .diplomeList {
     padding-left: 250px;
 }
 .experienceList {
     padding-left: 250px;
+}
+@media screen and (max-width: 1024px)
+{
+    .diplomeList {
+        padding-left: 150px;
+    }
+    .experienceList {
+        padding-left: 150px;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .diplomeList {
+        padding-left: 0;
+    }
+    .experienceList {
+        padding-left: 0;
+    }
 }
 /*project*/
 .project{
@@ -257,21 +273,17 @@ nav ul {
         min-height: 0 !important;
     }
 }
-footer {
-    background-color: #283959;
-    position: absolute;
-    bottom: 0;
-}
-footer p {
+
+#footer p {
     margin-top: 15px;
     text-align: center;
 }
-footer a {
+#footer a {
     color: #FFF;
     font-size: 2em;
-    margin: 0 10px;
+    padding: 0 10px;
 }
-footer a:hover {
+#footer a:hover {
     color: #FFF;
     border: 1px solid #FFF;
     padding: 2px 5px;
@@ -279,4 +291,38 @@ footer a:hover {
 /*modal*/
 .modal-content {
     background-color: #466FA6;
+}
+/*Project page*/
+.projectBody {
+    background-image: url("../img/paralax1.jpg");
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+}
+.projectMain {
+    background-color: #2a475e;
+    height: 100%;
+}
+.projectMain h1{
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    font-weight: bold;
+    padding: 15px 0 0 30px;
+    font-size: 3.5em;
+}
+.projectSection {
+    margin: 20px 10px 0 10px;
+    padding-bottom: 20px;
+}
+.projectSection h2{
+    padding-top: 10px;
+}
+.linkBack a{
+    color: #FFF;
+    margin: 0px auto;
+}
+.linkBack a:hover{
+    border: 1px solid #FFF;
+    padding: 2px 5px;
+    text-decoration: none;
 }
