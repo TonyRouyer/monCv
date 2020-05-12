@@ -19,6 +19,12 @@ nav a {
 nav ul {
     margin-left: 5%;
 }
+@media screen and (max-width: 768px)
+{
+    nav ul {
+        margin-left: 0;
+    }
+}
 /*presentation*/
     /*box image*/
 .side-img {
@@ -62,14 +68,21 @@ nav ul {
         font-weight: bold;
         font-size: 30px;
         margin-bottom: 20px;
-        content: "Tony Rouyer";
+    }    
+    .textPresentationBlanck h2 {
+        line-height: 1.8em !important;
     }
     .textPresentationBlanck h2:after {
         font-size: 20px;
-        content: "Developpeur web - Web mobile";
     }
     .textPresentation  {
     display: none;
+    }
+}
+@media screen and (min-width: 768px)
+{
+    .textPresentationBlanck{
+        display: none;
     }
 }
 .textLink {
@@ -83,8 +96,7 @@ nav ul {
     color: #FFF;
 }
 .textLink a:hover{
-    font-size: 1.5em;
-    color: black;
+    color: #FFF;
     text-decoration: none;
 }
 .textLink i {
@@ -174,6 +186,7 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 50px;
 }
 .diplome-experience {
     color: #FFF;
@@ -232,8 +245,7 @@ nav ul {
 .project p a:hover{
     color:  #FFF;
     text-decoration: none;
-    border: 2px solid #FFF;
-    padding: 5px;
+
 }
 .projectBlock {
     text-align: center;
@@ -273,11 +285,6 @@ nav ul {
         min-height: 0 !important;
     }
 }
-
-#footer p {
-    margin-top: 15px;
-    text-align: center;
-}
 #footer a {
     color: #FFF;
     font-size: 2em;
@@ -285,8 +292,6 @@ nav ul {
 }
 #footer a:hover {
     color: #FFF;
-    border: 1px solid #FFF;
-    padding: 2px 5px;
 }
 /*modal*/
 .modal-content {
@@ -320,9 +325,19 @@ nav ul {
 .linkBack a{
     color: #FFF;
     margin: 0px auto;
+    font-weight: bold;
 }
 .linkBack a:hover{
-    border: 1px solid #FFF;
-    padding: 2px 5px;
+    background-color: #fff;
+    color: #2a475e;
     text-decoration: none;
+    font-weight: bold;
+}
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: #2a475e;
+    display: none;
 }

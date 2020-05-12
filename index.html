@@ -8,10 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script src="https://kit.fontawesome.com/d55c1558f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/hover.css" />
+    <script src="https://kit.fontawesome.com/d55c1558f7.js" crossorigin="anonymous" SameSite="none Secure"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="top">
         <div class="row">
             <nav class="navbar navbar-expand-md col-12 navbarBox">
                 <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarmenu">
@@ -19,10 +20,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarmenu">
                     <ul class="navbar-nav text-center">
-                        <a class="nav-item nav-link" href="#diplome">Diplomes & Experience</a>
-                        <a class="nav-item nav-link" href="#competence">Competences & Langue</a>
-                        <a class="nav-item nav-link" href="#projet">Projets</a>
-                        <a class="nav-item nav-link" href="#contact">Contact</a>
+                        <li><a class="nav-item nav-link hvr-sweep-to-bottom" href="#competence">Competences & Langue</a></li>
+                        <li><a class="nav-item nav-link hvr-sweep-to-bottom" href="#diplome">Diplomes & Experience</a></li>
+                        <li><a class="nav-item nav-link hvr-sweep-to-bottom" href="#projet">Projets</a></li>
+                        <li><a class="nav-item nav-link hvr-sweep-to-bottom" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -36,13 +37,13 @@
                 <p class="text-center"><img src="assets/img/profil-picture.jpg" alt="profil picture" class="rounded-circle profil-picture"></p>
                 <div>
                     <div class="textPresentationBlanck">
-                        <h1></h1>
-                        <h2></h2>
+                        <h1>Tony Rouyer</h1>
+                        <h2>Developpeur web - Web mobile</h2>
                     </div>
                     <div class="textLink">
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/tony-rouyer-a00677185/?originalSubdomain=fr"><i class="fab fa-linkedin"></i>Linkedin</a></li>
-                            <li><a href="https://github.com/TonyRouyer"><i class="fab fa-github"></i>Github</a></li>
+                            <li><a class="hvr-pop" href="https://www.linkedin.com/in/tony-rouyer-a00677185/?originalSubdomain=fr"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                            <li><a class="hvr-pop" href="https://github.com/TonyRouyer"><i class="fab fa-github"></i>Github</a></li>
                         </ul>
                     </div>
                 </div>
@@ -94,7 +95,6 @@
         </div>
     </div>
     <div class="paralax">
-        
         <div class="container-fluid diplome-experience" id="diplome">
             <div class="row">
                 <div class="col-md-12 col-lg-6 diplomeList">
@@ -155,12 +155,11 @@
                 </div>
             </div>
         </div>
-
         <div class="container-fluid project" id="projet">
             <div class="row">
                 <div class="col-12">
                     <h1>Projet </h1>
-                    <p><a href="project.html" class="text-white">En voir +</a></p>
+                    <p><a href="project.html" class="text-white hvr-pop hvr-underline-from-center">En voir +</a></p>
                 </div>
                 <div class="col-12 p-0 projectBlock">
                     <a href="#"><img src="assets/img/mockup1.jpg" alt="mockup presentation" title="projet memo" class="my-2 mx-2" /></a>
@@ -177,7 +176,10 @@
                         <li><a class="text-white" href="mailto:tony.rouyer@hotmail.fr"><i class="fas fa-envelope"></i>tony.rouyer@hotmail.fr</a></li>
                         <li><button type="button" class="btn text-white" data-toggle="modal" data-target="#modalMap"><i class="fas fa-map-pin"></i></button>Rocourt-saint-martin, 02210</li>
                         <li><a class="text-white" href="assets/pdf/cv_Tony_rouyer.pdf"><i class="fas fa-file-download"></i></a>Télécharger le CV au format pdf</li>
-                        <li id="footer"><a href="https://github.com/TonyRouyer"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/tony-rouyer-a00677185/?originalSubdomain=fr"><i class="fab fa-linkedin"></i></a></li>
+                        <li id="footer">
+                            <a class="hvr-pop" href="https://github.com/TonyRouyer"><i class="fab fa-github"></i></a>
+                            <a class="hvr-pop" href="https://www.linkedin.com/in/tony-rouyer-a00677185/?originalSubdomain=fr"><i class="fab fa-linkedin"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -190,13 +192,15 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20880.366053447862!2d3.373920988419577!3d49.142755650610525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8eff073eb77b1%3A0x40af13e8169d6e0!2s02210%20Rocourt-Saint-Martin!5e0!3m2!1sen!2sfr!4v1588259152530!5m2!1sen!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20880.366053447862!2d3.373920988419577!3d49.142755650610525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8eff073eb77b1%3A0x40af13e8169d6e0!2s02210%20Rocourt-Saint-Martin!5e0!3m2!1sen!2sfr!4v1588259152530!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
     </div>
+    <button onclick="topFunction()" type="button" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
