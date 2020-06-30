@@ -25,3 +25,26 @@ function topFunction() {
         behavior: 'smooth',
     });
 };
+
+
+var tw = 0;
+var twh2 = 'Tony Rouyer';
+var speed = 80;
+function textPresentation1() {
+    if (tw < twh2.length) {
+        document.getElementById("textPresentation1").innerHTML += twh2.charAt(tw);
+        tw++;
+        setTimeout(textPresentation1, speed);
+    }
+}
+
+var i = 0;
+var txt = 'Developpeur web - Web mobile';
+var speed = 80;
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
