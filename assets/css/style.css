@@ -143,6 +143,9 @@ nav ul {
     .competence-langues h2 {
     text-align: center;
     }
+    .competence-langues p {
+        margin-left: 0;
+    }
 }
 .competence-langues p {
     margin-left: 30px;
